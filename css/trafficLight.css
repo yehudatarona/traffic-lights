@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body, #id_trafficLigths, .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  background: black;
+  margin: 20px;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.box #id_Divbg {
+  background: white;
+  margin: 2px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: blue;
+  font-size: 83px;
+  text-align: center;
+}
+
+#id_trafficLigths {
+  background: black;
+  color: white;
+  font-size: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  border-radius: 20px;
+  outline: 0;
+}
+
+#id_trafficLigths #id_red {
+  background: white;
+  margin: 2px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: blue;
+}
+
+#id_trafficLigths #id_orange {
+  background: white;
+  margin: 2px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: blue;
+}
+
+#id_trafficLigths #id_green {
+  background: white;
+  margin: 2px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: blue;
+}
+
+/*####### buttns style #########*/
+.btns {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btns button {
+  background: green;
+  color: white;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+  margin: 2px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btns .start {
+  background: green;
+}
+
+.btns .start:hover {
+  background: #00b300;
+}
+
+.btns .stop {
+  background: red;
+}
+
+.btns .stop:hover {
+  background: #ff3333;
+}
